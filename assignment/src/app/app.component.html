@@ -1,0 +1,43 @@
+
+
+<body id="main" class="bg-blueGray-50">
+  <header>
+    <nav class="flex items-center justify-between bg-gray-800 h-20 shadow-2xl">
+      <div class="logo">
+        <a routerLink="/"><h1 class="text-white ml-4 cursor-pointer text-2xl">Assignment for AVIPL</h1></a>
+      </div>
+      <ul *ngIf="loggedUser == undefined" class="flex">
+        <li>
+          <a class="text-white mr-4 bg-gray-500 pt-3 p-3 pr-5 pl-5 hover:bg-gray-600 transition-all rounded" routerLink="/signUp"> Sign Up</a>
+        </li>
+        <li>
+          <a class="text-white mr-4 bg-gray-500 pt-3 p-3 pr-5 pl-5 hover:bg-gray-600 transition-all rounded" routerLink="/login"> Login</a>
+        </li>
+      </ul>
+      <button *ngIf="loggedUser != undefined" (click)="toggleDropdown()" class="text-white text-md pr-2">+{{loggedUser.phone}}
+        <div id="dropdown" style="display: none; min-width: 13rem;"  class="absolute right-0 mt-2 bg-white rounded-md shadow-lg overflow-hidden z-20 mr-2">
+          <a (click)="logOut()" class="rounded-md flex items-center px-4 py-3 border-b hover:bg-gray-100 -mx-2" >
+            <i class="fas fa-sign-out-alt mr-2 text-lg text-blueGray-400"></i>
+            <h2 class="text-gray-600 text-lg mx-2"> Log Out</h2>
+          </a>
+        </div>
+    </button> 
+    </nav>
+  </header>
+  
+  <section *ngIf="loggedUser != undefined" class="">
+    <div class="bg-[url('https://i.imgur.com/jAXaawT.jpg')] h-screen bg-cover bg-center flex justify-items-center items-center">
+      <div class="px-10 lg:px-32 xl:px-40">
+        <h1 class=" font-semibold font-serif mb-6">
+          <span class="text-6xl text-red-500">You are Logged In</span> <br />
+          <span class="text-4xl">+{{loggedUser.phone}}</span>
+          <div class="mt-6">
+            <button (click)="delete()" class="w-50 inline-flex items-center justify-center px-2 py-1 bg-blue-500 border border-transparent rounded-md font-small capitalize text-white hover:bg-blue-700 active:bg-red-700 focus:outline-none focus:border-red-700 focus:ring focus:ring-red-200 disabled:opacity-25 transition">Delete acoount</button>
+          </div>
+        </h1>
+      </div>
+    </div>
+  </section>
+</body>
+
+<router-outlet></router-outlet>
