@@ -6,6 +6,18 @@ It creates the user with its phone number and verifies the provided phone number
 
 The user can Signup and then later can Login or delete his/her account.
 
+## assignment
+
+The assignment folder contains the code for **Angular**
+
+## loginSignup
+
+This folder contains the code for **Java(Spring)**
+
+## Quick start
+
+This project is deployed using AWS and can be viewed [here](http://signuplogin.s3-website.us-east-2.amazonaws.com/)
+
 ## Limitations
 
 As this project is made using the trial account of Twilio.
