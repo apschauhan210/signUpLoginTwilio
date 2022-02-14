@@ -34,4 +34,4 @@ New account signup can be done only by the verified phone numbers in the same Tw
 
 ## Author
 
-**Anuj Pratap Singh**(Email: apschauhan181@gmail.com)
+**Anuj Pratap Singh**(Email: _apschauhan181@gmail.com_)
