@@ -16,7 +16,7 @@ This folder contains the code for **Java(Spring)**
 
 ## Quick start
 
-This project is deployed using AWS and can be viewed [here](http://signuplogin.s3-website.us-east-2.amazonaws.com/)
+This project is deployed using AWS and can be viewed [here](http://signuplogin.s3-website.us-east-2.amazonaws.com/).
 
 ## Limitations
 
