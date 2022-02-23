@@ -1,4 +1,4 @@
-# [SignupLoginTwilio](http://signuplogin.s3-website.us-east-2.amazonaws.com/)
+# [SignupLoginTwilio](http://usermanagementaps.s3-website.us-east-2.amazonaws.com/)
 
 SignupLoginTwilio is a project to demonstrate the use of Twilio API to send SMSs.
 
@@ -16,7 +16,7 @@ This folder contains the code for **Java(Spring)**
 
 ## Quick start
 
-This project is deployed using AWS and can be viewed [here](http://signuplogin.s3-website.us-east-2.amazonaws.com/).
+This project is deployed using AWS and can be viewed [here](http://usermanagementaps.s3-website.us-east-2.amazonaws.com/).
 
 ## Limitations
 
